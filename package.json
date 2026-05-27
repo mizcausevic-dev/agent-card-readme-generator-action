@@ -1,0 +1,44 @@
+{
+  "name": "agent-card-readme-generator-action",
+  "version": "0.1.0",
+  "description": "GitHub Action that renders a human-readable Markdown README from an A2A AgentCard JSON via agent-card-readme-generator. Posts as a PR comment OR writes to a target file path (for auto-updated docs).",
+  "type": "module",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "author": "mizcausevic-dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mizcausevic-dev/agent-card-readme-generator-action"
+  },
+  "keywords": [
+    "github-action",
+    "actions",
+    "a2a",
+    "agent-cards",
+    "readme-generator",
+    "documentation",
+    "ai-governance",
+    "kinetic-gain-suite",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "eslint": "^9.17.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^2.1.8"
+  }
+}
